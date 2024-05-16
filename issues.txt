@@ -1,0 +1,72 @@
+// first of all completely remove python from your local computer..
+   
+             -> Use chatgpt for reference for how to remove in your system 
+
+_____________________________________________________________________________________
+ 
+    
+**** This section is based on my computer software { windows 10 } .. If you are using linux distribution you should convert the following commands .. For this use ChatGPT for converting the following commands  ****
+
+// Now install python3 in your system { windows 10 }
+
+             ->curl -O https://www.python.org/ftp/python/3.10.3/python-3.10.3-amd64.exe
+             ->python-3.10.3-amd64.exe
+             ->For checking the python is successfully installed or not 
+                     ->python --version
+
+   
+               PROBLEMS :-
+ 
+                       1) importError-triu
+                             solution :-  first of all uninstall scipy 
+                                                   ->pip uninstall scipy
+                                          then reinstall scipy 1.10.1
+                                                   ->pip install scipy==1.10.1
+
+
+                       2) from gensim.summarization.summarizer import summarize  
+                            solution :-   Along with gensim older version Install gensim 3.6.0
+                                          ->pip3 install gensim==3.6.0
+                                          ->pip install --upgrade pip setuptools
+                                          ->pip cache purge   // removing duplicates
+                                          ->not working .. remove it 
+
+
+
+
+                       3) Install PyTorch
+                                          ->pip install torch torchvision torchaudio
+
+                       4) Install en_core_web_sm     //Spacy Summarization
+                                          ->python -m spacy download en_core_web_sm
+
+
+
+_______________________________________________________________________________________
+
+
+// Now you have to install some libraries that are needed for our project { Youtube Viedo Summarizer } 
+
+    Installing LIBRARIES :- 
+
+        ->pip install torch torchvision torchaudio
+        ->pip install streamlit
+        ->pip install google-api-python-client
+        ->pip install beautifulsoup4
+        ->pip install nltk
+        ->pip install spacy
+        ->pip install gensim
+        ->pip install sumy
+        ->pip install scikit-learn
+        ->pip install torch torchvision
+        ->pip install youtube_dl
+        ->pip install pytube
+        ->pip install ffmpeg-python
+        ->pip install transformers
+        ->pip install pytesseract
+        ->pip install moviepy
+        ->pip install textblob
+        ->pip install pydub
+        ->pip install deep_translator
+        ->pip install youtube_transcript_api
+        ->pip install gtts
